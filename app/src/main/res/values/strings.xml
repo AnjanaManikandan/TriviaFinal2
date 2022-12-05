@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Trivia Night</string>
+    <string name="num_of_q">How many questions?</string>
+    <string name="zero">0</string>
+
+    <string name="question_number">Question 1</string>
+    <string name="question">What is the capital of USA? </string>
+    <string name="answer_choice_a"> A </string>
+    <string name="answer_choice_b"> B </string>
+    <string name="answer_choice_c"> C </string>
+    <string name="answer_choice_d"> D </string>
+
+    <string name="correct_ans_msg"> Correct! </string>
+    <string name="incorrect_ans_msg"> Ah, that is incorrect. </string>
+    <string name="continue_btn"> Next Question </string>
+    <string name="quit_btn"> Quit Game </string>
+    <string name="time_left"> Time Left: 00:30 </string>
+
+    <string name="number_of_correct"> Number of Correct Answers: </string>
+    <string name="number_of_incorrect"> Number of Incorrect Answers: </string>
+    <string name="final_score_out_of_100"> Final Score: </string>
+    <string name="highscore"> High Score: </string>
+    <string name="final_percent"> 0% </string>
+    <string name="highscore_percent"> 0 </string>
+
+    <string name="play_again"> Play Again? </string>
+    <string name="home"> Return to Home </string>
+</resources>

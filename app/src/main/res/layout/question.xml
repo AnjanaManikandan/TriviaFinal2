@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/question_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="@string/question_number"
+        android:textColor="#D3BAF3"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboard" />
+
+    <TextView
+        android:id="@+id/question_current"
+        android:layout_width="349dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="@string/question"
+        android:textColor="#D3BAF3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_num" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_current">
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="#F3C7FF"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text=" Option 1"
+            android:textColor="#D25CE6"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="#F3C7FF"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text=" Option 2"
+            android:textColor="#D25CE6"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="#F3C7FF"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text=" Option 3"
+            android:textColor="#D25CE6"
+            android:textSize="34sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="44dp"
+        android:background="#A737BA"
+        android:fontFamily="sans-serif-smallcaps"
+        android:includeFontPadding="true"
+        android:text="Next"
+        android:textColor="#D68D8D"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+    <TextView
+        android:id="@+id/scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Score: 0"
+        android:textColor="#B3559E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/time_left"
+        android:textColor="#B35568"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/difficulty_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Difficulty"
+        android:textColor="#ED55ED"
+        android:textColorHint="#CF37AD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

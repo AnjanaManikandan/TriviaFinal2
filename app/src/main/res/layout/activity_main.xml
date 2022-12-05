@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Title"
+        android:layout_width="409dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/triviatitle" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="245dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/start_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highscore" />
+
+    <TextView
+        android:id="@+id/highscoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/highscore"
+        android:textColor="#F69696"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/highscore_percent"
+        android:textColor="#EFA768"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highscoretxt" />
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#58CAFF"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+</android.support.constraint.ConstraintLayout>
